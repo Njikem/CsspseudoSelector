@@ -1,0 +1,37 @@
+#eat{
+   display:grid;
+    place-items: center;
+}
+
+#mama{
+    display:grid;
+    place-items:center;
+}
+
+.food{
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+p:hover{
+    background-color: aqua;
+    font-size: 17px;
+}
+
+section:active{
+    color:darkkhaki;
+}
+
+h1:active{
+    color:blueviolet;
+    font-size:15px;
+    
+}
+
+h2:nth-child(1){
+    color:aquamarine;
+}
+
+:not(h2){
+    color:brown;
+}
