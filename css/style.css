@@ -6,6 +6,30 @@
 #mama{
     display:grid;
     place-items:center;
+    color:blue;
+    background-color: beige;
+    transition: all 2s ease-in-out;
+}
+#eat:hover>mama{
+    transform: translatex(100%);
+    animation:left-to-right 1s ease-in-out;
+}
+
+@keyframes left-to-right{
+    0%{
+        transform: translatex(0);
+        background-color: brown;
+    }
+    33%{
+        transform: translatex(100%);
+    }
+    66%{
+        transform: transletex(100%) translatey(100);
+    }
+    100%{
+        transform: translatex(100%);
+        background-color: green;
+    }
 }
 
 .food{
@@ -34,4 +58,26 @@ h2:nth-child(1){
 
 :not(h2){
     color:brown;
+}
+#animation_section:hover>box_one{
+transform: translatex(100%);
+}
+
+#animation_section:hover>box_two{
+    transform: translatex(100%);
+}
+
+
+
+#box-one{
+    height:100px;
+    width:100px;
+    background-color: blue;
+    transition: transform 1s ease-in-out;
+}
+#box-two{
+    height:100px;
+    width:100px;
+    background-color: bisque;
+    transition:transform 1s ease-in-out;
 }
